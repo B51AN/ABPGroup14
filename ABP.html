@@ -1,72 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
-
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="abp.css">
-    <title>The Broken Planet</title>
-    <div class="topnav" name="topnav">
-        <!-- Navigation menu -->
-        <a class="active" href="ABP.html">Homepage</a>
-        <a class="active" href="Login.html">Login</a>
-        <a class="active" href="Leaderboard.html">Leaderboard</a>
-        <a class="active" href="AboutUs.html">About Us</a>
-        <a class="active" href="Contact.html">Contact Us</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </div>
-        
-        <div style="padding-left:16px">
-          
-        </div>
-        
-        <script>
-        function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
-            x.className += " responsive";
-          } else {
-            x.className = "topnav";
-          }
-        }
-        </script>
-    </div>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-
 <body>
-    <div class="container p-3 my-3 border">
-        <h1>Address the Broken Plantet</h1>
-        <p>Save the planet and help community environmental issues.</p>
-    </div>
+    <div class="container">
+        <div class="logo"> <span style="color: rgb(27, 135, 184);">A</span>ddress <span style="color: rgb(27, 135, 184);">T</span>he <span style="color: rgb(27, 135, 184);">B</span>roken <span style="color: rgb(27, 135, 184);">P</span>lanet</div>
+        <section>
+           <div class="content">
+            <h1><span style="color: rgb(27, 135, 184);">H</span>elp <span style="color: rgb(27, 135, 184);">S</span>ave <span style="color: rgb(27, 135, 184);">O</span>ur <span style="color: rgb(27, 135, 184);">E</span>nvironment</h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic ad aspernatur officiis nobis excepturi deserunt ab odio error similique animi, consectetur voluptates. Ex aliquid cupiditate, voluptatum sit tenetur, ratione quos autem praesentium voluptas tempore quidem, eligendi quasi. At, deleniti error?
+            </p>
+            <button>Join Here</button>
+           </div>
+        </section>
 
-    <div class="container p-3 my-3 bg-primary text-white">
-        <h1>Coastal Areas</h1>
-        <p>Clean Ups.</p>
+        <div class="image">
+          <img src="newbi/pi.jpg" alt="Proffessor">
+      </div>
 
-    </div>
-    <div class="container p-3 my-3 bg-primary text-white">
-        <h1>City</h1>
-        <p>Clean Ups.</p>
-    </div>
-    <div class="container p-3 my-3 bg-primary text-white">
-        <h1>Neighborhoods.</h1>
-        <p>Clean Ups.</p>
+        
 
+        <div class="nav-list">
+            <li><a href="ABP.html">Home</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="Leaderboard.html">Leaderboard</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+        </div>
     </div>
-    <footer>
+</body>
+</html>
 
-    </footer>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: white;
+    
+}
+.container section h1{
+    font-size: 50px;
+    font-variant: small-caps;
+}
+.container section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    width: 500px;
+    margin-left: 10%;
+   
+}
+.container section button{
+    width: 150px;
+    height: 45px;
+    margin-top: 10px;
+    background-color: rgb(27, 135, 184);
+    border: 2px solid rgb(27, 135, 184);
+}
+.container section button:hover{
+    background-color: transparent;
+    border: 2px solid rgb(27, 135, 184);
+    color: rgb(0, 204, 255);
+}
+.container .image img{
+    margin-left: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 100vh;
+}
+.container .logo{
+    font-size: 40px;
+    padding: 20px 40px;
+}
+.container .nav-list{
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 8rem;
+    list-style: none;
+    background-color: transparent;
+}
+.container .nav-list li{
+    margin: 40px;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 20px;
+}
+.container .nav-list li a:hover{
+    color: rgba(27, 135, 184);
+}
+.container .nav-list li a{
+    background-color: transparent;
+    text-decoration: none;
+}
+@media screen and (max-width: 900px){
+    .container section{
+        width: 90%;
+        margin-top: 100%;
+        margin-left: 10%;
+    }
+    .container .image img{
+        top:10vh;
+        height: auto;
+        width: 90%;
+        margin-left: 40px;
+    }
+    .container .nav-list{
+        left: 0;
+        top: 130vh;
+        margin-left: 5%;
+    }
+}
+
+</style>
+
 
 </body>
-
-
-
-</html>
