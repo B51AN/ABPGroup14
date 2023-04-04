@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- link for font awesome to use icons -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="abp.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+        <!-- making classes for my images and headings -->
+    </div>
+    <div class="container">
+        <div class="bg">
+        </div>
+        <div class="image">
+            <!-- adding my image -->
+            <img src="newbi/Beach2.jpg" width="350" height="400" alt="">
+        </div>
+        <div class="content">
+            <h2>Coastel</h2>
+            <p>
+                If you like the beach or sunny areas this is the place for you. We will be doing cleanups in coastel areas just click the link below.
+            </p>
+            <!-- making my "readmore button a link back to the about us page" -->
+            <a href="AboutUs.html"><button>Read More...</button></a>
+        </div>
+             <div class="empty">
+
+             </div>
+           
+
+    </div>
+         <!-- making classes for my images and headings -->
+    <div class="container">
+        <div class="bg">
+        </div>
+        <div class="image">
+            <!-- adding my image -->
+            <img src="newbi/NH.jpg" width="350" height="400" alt="">
+        </div>
+        <div class="content">
+            <h2>Neighbourhood</h2>
+            <p>
+               If you dont like travelling far this is the clean up for you. We will be cleaning up n local areas such as estates to make it easier for the community.
+            </p>
+            <!-- making my "readmore button a link back to the about us page" -->
+            <a href="AboutUs.html"><button>Read More...</button></a>
+        </div>
+             <div class="empty">
+
+             </div>
+            
+
+    </div>
+         <!-- making classes for my images and headings -->
+    <div class="container">
+        <div class="bg">
+        </div>
+        <div class="image">
+             <!-- adding my image -->
+            <img src="newbi/City.jpg" width="350" height="400" alt="">
+        </div>
+        <div class="content">
+            <h2>Inter-City</h2>
+            <p>
+             This should be more suited towards everybody. Here will just be cleaning up the aereas of town such as Connolly, Jervis and much more.
+            </p>
+            <!-- making my "readmore button a link back to the about us page" -->
+            <a href="AboutUs.html"><button>Read More...</button></a>
+        </div>
+            
+
+             </div>
+     
+
+            </div>
+</body>
+</html>
+
+<style>
+    /*adding the background image and styling it*/
+      body{
+    background-image: url('newbi/blue.jfif');
+    background-size: cover;
+}
+
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    /*making the images fit perfectly on the screen */
+    width: 400px;
+    height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    position: relative;
+    margin-left: 60px;
+    margin-top: 5%;
+}
+  /*making the images go towards the right perfectly on the screen */
+body{
+    
+    display: flex;
+}
+  /* making the images fit to look the same styling*/
+.container .image img{
+  width: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 500px;
+  transition: 0.5s ease-in-out;
+}
+.container:hover .image img
+{ 
+  border-radius: 50%;  
+  width: 150px;
+  height: 150px;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .content{
+   position: absolute;
+   top: 42%;
+   width: 350px;
+   height: auto;
+   margin-left: 20px;
+   margin-right: 20px;
+   text-align: center;
+   display: none;
+   transition: 0.5s ease-in-out;
+}
+.container:hover .content{
+    display: block;
+}
+
+.container button{
+    width: 140px;
+    height: 50px;
+    margin: 20px;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.media{
+    display: flex;
+    position: absolute;
+    top: 83%;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.container:hover .media{
+    opacity: 1;
+}
+.media li{
+    list-style: none;
+    margin: 15px 35px;
+}
+.empty{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 250px;
+    background-color: black;
+    z-index: -1;
+    display: none;
+    transition: 1s ease-in-out;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 76%);
+}
+.container:hover .empty{
+    display: block;
+}
+@media screen and (max-width: 500px){
+    body{
+        display: block;
+    }
+}
+</style>
