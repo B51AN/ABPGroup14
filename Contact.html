@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1,0">
     <title>The Broken Planet</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
-   <link rel="stylesheet" href="abp.css">
     <div class="topnav" name="topnav">
         <!-- Navigation menu -->
         <a class="active" href="ABP.html">Homepage</a>
-        <a class="active" href="Login.html">Login</a>
+        <a class="active" href="signup.html">Clean-Ups</a>
         <a class="active" href="Leaderboard.html">Leaderboard</a>
         <a class="active" href="AboutUs.html">About Us</a>
         <a class="active" href="Contact.html">Contact Us</a>
@@ -22,7 +21,7 @@
         <div style="padding-left:16px">
           
         </div>
-        
+          <!-- java for my navbar -->
         <script>
         function myFunction() {
           var x = document.getElementById("myTopnav");
@@ -39,6 +38,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- font awesome so i can add icons like the phone icon -->
    </div>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,6 +52,7 @@
   <div class="content">
       <div class="content-form">
           <section>
+              <!-- adding the marker icon -->
               <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
               <h2>Address</h2>
               <p>
@@ -62,29 +63,31 @@
           </section>
 
           <section>
+                <!-- adding the phone icon -->
               <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
               <h2>Phone Number</h2>
               <p>084-364-4634</p>
           </section>
 
           <section>
+                <!-- adding the envelope icon -->
               <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
               <h2>E-mail</h2>
               <p>addressthebrokenplanet@gmail.com</p>
           </section>
       </div>
   </div>
-
+            <!-- making a form submit so i can recieve emails from the website -->
 <form action="https://formsubmit.co/9affc27e1550862f50fedad6b4cbf007" method="POST" onsubmit="myFunction()">
   <div class="form">
       <div class="right">
         <div class="contact-form">
-            <input type="text" name="name"required>
+            <input type="text" autocomplete="off" name="name"required>
             <span>Full Name</span>
         </div>
 
         <div class="contact-form">
-          <input type="E-mail" name="name"required>
+          <input type="E-mail" autocomplete="off"name="name"required>
             <span>E-mail Address</span>
         </div>
         <div class="contact-form">
@@ -102,9 +105,6 @@
       </div>
     </div>
 </form>
-  <div class="media">
-    <li><i class="fa-brands fa-instagram"></i></li>
-  </div>
   <div class="empty">
 
   </div>
@@ -112,6 +112,65 @@
 </body>
 </html>
   <style>
+.topnav {
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #2888f6;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(203, 206, 202);
+    color: rgb(0, 0, 0);
+  }
+  
+  .topnav a.active {
+    background-color: #2888f6;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(204, 204, 204);
+    color: white;
+  }
+
   *{
     margin: 0;
     color: #fff;
@@ -272,4 +331,6 @@ location.href = 'ABP.html';
 }
   </script>
   
+
+
 
