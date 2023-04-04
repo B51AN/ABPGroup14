@@ -5,19 +5,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="abp.css">
+    <title>The Broken Planet</title>
+   
 </head>
 <body>
     <div class="container">
-        <div class="logo"> <span style="color: rgb(27, 135, 184);">A</span>ddress <span style="color: rgb(27, 135, 184);">T</span>he <span style="color: rgb(27, 135, 184);">B</span>roken <span style="color: rgb(27, 135, 184);">P</span>lanet</div>
+        <div class="logo"> <span style="color: rgb(27, 135, 184);">A</span>ddress <span style="color: rgb(255, 255, 255);">T</span>he <span style="color: rgb(27, 135, 184);">B</span>roken <span style="color: rgb(27, 135, 184);">P</span>lanet</div>
         <section>
            <div class="content">
             <h1><span style="color: rgb(27, 135, 184);">H</span>elp <span style="color: rgb(27, 135, 184);">S</span>ave <span style="color: rgb(27, 135, 184);">O</span>ur <span style="color: rgb(27, 135, 184);">E</span>nvironment</h1>
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic ad aspernatur officiis nobis excepturi deserunt ab odio error similique animi, consectetur voluptates. Ex aliquid cupiditate, voluptatum sit tenetur, ratione quos autem praesentium voluptas tempore quidem, eligendi quasi. At, deleniti error?
             </p>
-            <button>Join Here</button>
+            <a href="Login.html"><button>Join Here</button></a>
            </div>
         </section>
 
@@ -28,8 +28,7 @@
         
 
         <div class="nav-list">
-            <li><a href="ABP.html">Home</a></li>
-            <li><a href="Login.html">Login</a></li>
+            <li><a href="signup.html">Clean-Ups</a></li>
             <li><a href="Leaderboard.html">Leaderboard</a></li>
             <li><a href="Contact.html">Contact Us</a></li>
             <li><a href="AboutUs.html">About Us</a></li>
@@ -48,10 +47,12 @@
     color: white;
     
 }
+/*styling my h1*/
 .container section h1{
     font-size: 50px;
     font-variant: small-caps;
 }
+/*styling my paragraph*/
 .container section{
     display: flex;
     justify-content: center;
@@ -61,18 +62,22 @@
     margin-left: 10%;
    
 }
+/*making my "join here" button look better*/
 .container section button{
     width: 150px;
+    cursor: pointer;
     height: 45px;
     margin-top: 10px;
     background-color: rgb(27, 135, 184);
     border: 2px solid rgb(27, 135, 184);
 }
+/*making my "join here" button have a hover effect*/
 .container section button:hover{
     background-color: transparent;
     border: 2px solid rgb(27, 135, 184);
     color: rgb(0, 204, 255);
 }
+/*styling my image*/
 .container .image img{
     margin-left: 50%;
     position: absolute;
@@ -81,10 +86,12 @@
     width: 800px;
     height: 100vh;
 }
+/*making my top heading look better*/
 .container .logo{
     font-size: 40px;
     padding: 20px 40px;
 }
+/*styling my navbar*/
 .container .nav-list{
     position: absolute;
     display: flex;
@@ -93,31 +100,37 @@
     list-style: none;
     background-color: transparent;
 }
+/*styling navbar*/
 .container .nav-list li{
     margin: 40px;
     background-color: transparent;
     text-decoration: none;
     font-size: 20px;
 }
+/*giving my navbar a blue hover effect*/
 .container .nav-list li a:hover{
     color: rgba(27, 135, 184);
 }
+/*styling the navbar*/
 .container .nav-list li a{
     background-color: transparent;
     text-decoration: none;
 }
+/*changes the screen dimentions depending on the width dimention*/
 @media screen and (max-width: 900px){
     .container section{
         width: 90%;
         margin-top: 100%;
         margin-left: 10%;
     }
+    /*making the image fit in nicely*/
     .container .image img{
         top:10vh;
         height: auto;
         width: 90%;
         margin-left: 40px;
     }
+    /*styling the navbar*/
     .container .nav-list{
         left: 0;
         top: 130vh;
