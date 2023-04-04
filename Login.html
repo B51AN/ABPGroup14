@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="abp.css">
     <title>The Broken Planet</title>
     <div class="topnav" name="topnav">
-        <!-- Navigation menu -->
+        <!-- Navigation bar -->
         <a class="active" href="ABP.html">Homepage</a>
-        <a class="active" href="Login.html">Login</a>
+        <a class="active" href="signup.html">Clean-Ups</a>
         <a class="active" href="Leaderboard.html">Leaderboard</a>
         <a class="active" href="AboutUs.html">About Us</a>
         <a class="active" href="Contact.html">Contact Us</a>
@@ -23,12 +23,13 @@
         <div style="padding-left:16px">
           
         </div>
-        
+         <!--making webpage responsive-->
         <script>
         function myFunction() {
           var x = document.getElementById("myTopnav");
           if (x.className === "topnav") {
             x.className += " responsive";
+            
           } else {
             x.className = "topnav";
           }
@@ -49,21 +50,24 @@
 
     <section class="login">
         <div class="logo">
-            <h1>LOGO</h1>
+            <h1>ABP</h1>
         </div>
 
 
         <form action="">
 
 
-            <input type="text" class="form-control" placeholder="Mail Id">
-            <input type="text" class="form-control" placeholder="Password">
+            <input type="text" class="form-control" autocomplete="off" placeholder="Email-Address">
+            <input type="password" class="form-control" placeholder="Password">
 
 
 
             <input type="submit" value="LogIn" class="bg-primary">
 
+
+            <!--enable sign up button-->
             <p>You don't have an account? <a href="#" onclick="change()">SignUp</a> </p>
+            
 
 
 
@@ -71,41 +75,34 @@
         </form>
 
 
-        <div class="media">
-            <li><i class="fab fa-google-plus-g fa-2x" style="color: red;"></i></li>
-            <li><i class="fab fa-facebook fa-2x" style="color: blue;"></i></li>
-            <li><i class="fab fa-twitter fa-2x" style="color: dodgerblue;"></i></li>
-            <li><i class="fab fa-github fa-2x" style="color: #3c3c3c;"></i></li>
-        </div>
+      
     </section>
 
 
 </div>
 
 
-<!-- copy and paste for signup -->
-
 <div class="container1">
 
 
     <section class="signup">
         <div class="logo">
-            <h1>LOGO</h1>
+            <h1>ABP</h1>
         </div>
 
-
+            <!--create the sign up from-->
         <form action="">
 
-            <input type="text" class="form-control" placeholder="User Name">
-            <input type="text" class="form-control" placeholder="Mail Id">
-            <input type="text" class="form-control" placeholder="Password">
-            <input type="text" class="form-control" placeholder="Confirm Password">
+            <input type="text" class="form-control" autocomplete="off" placeholder="User Name">
+            <input type="text" class="form-control" autocomplete="off" placeholder="Email-Address">
+            <input type="password" class="form-control" placeholder="Password">
+            <input type="password" class="form-control" placeholder="Confirm Password">
 
 
 
             <input type="submit" value="SignUp" class="bg-success">
 
-            <p>You alredy have an account? <a href="#" onclick="change()">LogIn</a> </p>
+            <p>You already have an account? <a href="#" onclick="change()">LogIn</a> </p>
 
 
 
@@ -114,25 +111,27 @@
         
     </section>
 
+ <!-- naming classes to style the header and p tag on the log in page-->
     <div class="empty">
         <div class="empty1">
             <div class="content">
                 <h1>HELLO!</h1>
-                <p>WE ARE HAPPY TO SEE YOU AGAIN</p>
+                <p>WELCOME BACK, LOGIN HERE ➡</p>
             </div>
         </div>
 
-
+        <!-- naming classes to style the header and p tag on the sign up  page-->
         <div class="empty2">
             <div class="content">
                 <h1>WELCOME!</h1>
-                <p>REGISTER AND ENJOY OUR BENEFITS</p>
+                <p>SIGN UP TO START YOUR CLEANUP</p>
             </div>
         </div>
     </div>
 
 </div>
 
+<!--java for sign up and login buttons-->
 <script>
     function change(){
         var e=document.querySelector('.container');
@@ -249,7 +248,7 @@ p{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #ffcc00;
+    background-color: rgb(27, 135, 184);
     z-index: -2000;
     transition: 1s ease-in-out;
 }
@@ -260,7 +259,7 @@ p{
     position: absolute;
     top: 0;
     left: 50%;
-    background-color: teal;
+    background-color: black;
     z-index: -2000;
     transition: 1s ease-in-out;
     color: transparent;
