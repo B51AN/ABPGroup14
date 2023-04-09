@@ -81,15 +81,17 @@
 <form action="https://formsubmit.co/9affc27e1550862f50fedad6b4cbf007" method="POST" onsubmit="myFunction()">
   <div class="form">
       <div class="right">
+        <!-- creating form for full name-->
         <div class="contact-form">
             <input type="text" autocomplete="off" name="name"required>
             <span>Full Name</span>
         </div>
-
+        <!-- creating form for email-->
         <div class="contact-form">
           <input type="E-mail" autocomplete="off"name="name"required>
             <span>E-mail Address</span>
         </div>
+        <!-- creating form to type message-->
         <div class="contact-form">
             <textarea name="text">
               
@@ -97,7 +99,7 @@
             <span> Type your Message....</span>
 
         </div>
-
+        <!-- creating  submit button -->
         <div class="contact-form">
             <input type="submit" name="submit">
         </div>
@@ -112,11 +114,12 @@
 </body>
 </html>
   <style>
+    /*styling navbar*/
 .topnav {
     overflow: hidden;
     background-color: rgb(255, 255, 255);
   }
-  
+  /*styling the navbar*/
   .topnav a {
     float: left;
     display: block;
@@ -126,12 +129,12 @@
     text-decoration: none;
     font-size: 17px;
   }
-  
+  /*giving the navbar a hover effect*/
   .topnav a:hover {
     background-color: rgb(203, 206, 202);
     color: rgb(0, 0, 0);
   }
-  
+  /*adding color to the navbar*/
   .topnav a.active {
     background-color: #2888f6;
     color: white;
@@ -140,7 +143,7 @@
   .topnav .icon {
     display: none;
   }
-  
+  /*adjusting sizes of navbar depending on the screen size*/
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -148,7 +151,7 @@
       display: block;
     }
   }
-  
+ /*adjusting sizes of navbar depending on the screen size*/
   @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
@@ -156,19 +159,12 @@
       right: 0;
       top: 0;
     }
+      /*making navbar responsive*/
     .topnav.responsive a {
       float: none;
       display: block;
       text-align: left;
     }
-  }
-
-
-footer {
-    text-align: center;
-    padding: 3px;
-    background-color: rgb(204, 204, 204);
-    color: white;
   }
 
   *{
@@ -179,21 +175,24 @@ footer {
     font-family: 'Poppins', sans-serif;
     border: none;
   }
+   /*Adding and styling the background image*/
   body{
     background-image: url('newbi/Bi.jfif');
     background-size: cover;
   }
+   /*styling the header*/
   header{
     position: absolute;
     text-align: center;
     width: 75%;
     left: 12%;
   }
-
+   /*styling the header*/
   header h1{
     font-size: 30px;
     color: black;
   }
+     /**/
   .empty{
     width: 100%;
     height: 100vh;
@@ -203,10 +202,11 @@ footer {
     left: 0;
     z-index: -1;
   }
-
+     /*styling the form*/
   .conent-form{
     margin-top: 7rem;
   }
+     /*styling the icons*/
   section i{
     border-radius: 50%;
     width: 40px;
@@ -215,6 +215,7 @@ footer {
     color: #000;
     text-align: center;
   }
+  
   .form{
     display: flex;
     position: absolute;
@@ -330,6 +331,8 @@ footer {
 location.href = 'ABP.html';
 }
   </script>
+  
+
   
 
 
