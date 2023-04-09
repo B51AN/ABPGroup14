@@ -1,50 +1,60 @@
+<!--HTML code with JS linked for leaderboard this shows users points when attending events-->
 <!DOCTYPE html>
 <html lang="en">
-<html>
-
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="abp.css">
-    <title>The Broken Planet</title>
-    <div class="topnav" name="topnav">
-        <!-- Navigation menu -->
-        <a class="active" href="ABP.html">Homepage</a>
-        <a class="active" href="signup.html">Clean-Ups</a>
-        <a class="active" href="Leaderboard.html">Leaderboard</a>
-        <a class="active" href="AboutUs.html">About Us</a>
-        <a class="active" href="Contact.html">Contact Us</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </div>
-        
-        <div style="padding-left:16px">
-          
-        </div>
-        
-        <div class="wrapper">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<!--Title on Webpage for leaderboard-->
+	<title>Address the Broken Planet</title>
+	<div class="container">
+        <div class="logo"> <span style="color: rgb(27, 135, 184);">A</span>ddress <span style="color: rgb(255, 255, 255);">T</span>he <span style="color: rgb(27, 135, 184);">B</span>roken <span style="color: rgb(27, 135, 184);">P</span>lanet</div>
+        <section>
+           <div class="content">
+            <h1><span style="color: rgb(27, 135, 184);">H</span>elp <span style="color: rgb(27, 135, 184);">S</span>ave <span style="color: rgb(27, 135, 184);">O</span>ur <span style="color: rgb(27, 135, 184);">E</span>nvironment</h1>
+            <p>
+	<link rel="stylesheet" href="abp.css">
+	<div class="nav-list">
+		<li><a href="signup.html">Clean-Ups</a></li>
+		<li><a href="Leaderboard.html">Leaderboard</a></li>
+		<li><a href="Contact.html">Contact Us</a></li>
+		<li><a href="AboutUs.html">About Us</a></li>
+	</div>
+</div>
+</body>
+</html>
+    
+    <div style="padding-left:16px">
+      
+    </div>
+</head>
+<body>
+<!--Start of code for leaderboard-->
+<!--Div to split the leaderboards into parts-->
+<div class="wrapper">
 	<div class="lboard_section">
 		<div class="lboard_tabs">
 			<div class="tabs">
 				<ul>
+					<!-- List to show points the current day Month and year-->
 					<li data-li="today">Today</li>
 					<li class="active" data-li="month">Month</li>
 					<li data-li="year">Year</li>
 				</ul>
 			</div>
 		</div>
-
+        
 		<div class="lboard_wrap">
 			<div class="lboard_item today" style="display: none;">
 				<div class="lboard_mem">
 					<div class="img">
+						<!-- Image to show user on leaderboard-->
 						<img src="pic_1.png" alt="picture_1">
 					</div>
 					<div class="name_bar">
-						<p><span>1.</span> Charles John</p>
+						<!-- Name of user on leaderboard-->
+						<p><span>1.</span> Kevin Osifo</p>
 						<div class="bar_wrap">
+							<!-- inner styling for the innner bar-->
 							<div class="inner_bar" style="width: 95%"></div>
 						</div>
 					</div>
@@ -54,10 +64,13 @@
 				</div>
 				<div class="lboard_mem">
 					<div class="img">
+						<!-- Image to show user on leaderboard-->
 						<img src="pic_2.png" alt="picture_2">
 					</div>
 					<div class="name_bar">
-						<p><span>2.</span>Alex Mike</p>
+						<!-- Name of user on leaderboard-->
+						<!-- Span is added for inline container for phrasing content -->
+						<p><span>2.</span>Alex Gabbett</p>
 						<div class="bar_wrap">
 							<div class="inner_bar" style="width: 80%"></div>
 						</div>
@@ -68,10 +81,12 @@
 				</div>
 				<div class="lboard_mem">
 					<div class="img">
+						<!-- Image to show user on leaderboard-->
 						<img src="pic_3.png" alt="picture_2">
 					</div>
 					<div class="name_bar">
-						<p><span>3.</span>Johnson</p>
+						<!-- Name of user on leaderboard-->
+						<p><span>3.</span>Theo James</p>
 						<div class="bar_wrap">
 							<div class="inner_bar" style="width: 60%;"></div>
 						</div>
@@ -82,10 +97,13 @@
 				</div>
 				<div class="lboard_mem">
 					<div class="img">
+						<!-- Image to show user on leaderboard-->
 						<img src="pic_4.png" alt="picture_1">
 					</div>
 					<div class="name_bar">
-						<p><span>4.</span>Rosey</p>
+						<!-- Name of user on leaderboard-->
+						<!-- Span is added for inline container for phrasing content -->
+						<p><span>4.</span>Emmma Kelly</p>
 						<div class="bar_wrap">
 							<div class="inner_bar" style="width: 30%"></div>
 						</div>
@@ -96,14 +114,17 @@
 				</div>
 				<div class="lboard_mem">
 					<div class="img">
+						<!-- Image to show user on leaderboard-->
 						<img src="pic_5.png" alt="picture_2">
 					</div>
 					<div class="name_bar">
-						<p><span>5.</span>Scarlett Angela</p>
+						<!-- Name of user on leaderboard-->
+						<p><span>5.</span>Scarlett Morgan</p>
 						<div class="bar_wrap">
 							<div class="inner_bar" style="width: 10%"></div>
 						</div>
 					</div>
+					<!--Div added to show points for user that user has built up-->
 					<div class="points">
 						110 points
 					</div>
@@ -112,10 +133,12 @@
 			<div class="lboard_item month" style="display: block;">
 				<div class="lboard_mem">
 					<div class="img">
+						<!-- Image to show user on leaderboard-->
 						<img src="pic_2.png" alt="picture_2">
 					</div>
 					<div class="name_bar">
-						<p><span>1.</span> Alex Mike</p>
+						<!-- Name of user on leaderboard-->
+						<p><span>1.</span>Alex Gabbett</p>
 						<div class="bar_wrap">
 							<div class="inner_bar" style="width: 95%"></div>
 						</div>
@@ -126,10 +149,12 @@
 				</div>
 				<div class="lboard_mem">
 					<div class="img">
+						<!-- Image to show user on leaderboard-->
 						<img src="pic_3.png" alt="picture_3">
 					</div>
 					<div class="name_bar">
-						<p><span>2.</span>Johnson</p>
+						<!-- Name of user on leaderboard-->
+						<p><span>2.</span>Theo James</p>
 						<div class="bar_wrap">
 							<div class="inner_bar" style="width: 80%"></div>
 						</div>
@@ -140,10 +165,12 @@
 				</div>
 				<div class="lboard_mem">
 					<div class="img">
+						<!-- Image to show user on leaderboard-->
 						<img src="pic_1.png" alt="picture_1">
 					</div>
 					<div class="name_bar">
-						<p><span>3.</span>Charles John</p>
+						<!-- Name of user on leaderboard-->
+						<p><span>3.</span>Kevin Osifo</p>
 						<div class="bar_wrap">
 							<div class="inner_bar" style="width: 70%;"></div>
 						</div>
@@ -154,10 +181,12 @@
 				</div>
 				<div class="lboard_mem">
 					<div class="img">
+						<!-- Image to show user on leaderboard-->
 						<img src="pic_5.png" alt="picture_5">
 					</div>
 					<div class="name_bar">
-						<p><span>4.</span>Scarlett Angela</p>
+						<!-- Name of user on leaderboard-->
+						<p><span>4.</span>Scarlett Morgan</p>
 						<div class="bar_wrap">
 							<div class="inner_bar" style="width: 50%"></div>
 						</div>
@@ -168,10 +197,12 @@
 				</div>
 				<div class="lboard_mem">
 					<div class="img">
+						<!-- Image to show user on leaderboard-->
 						<img src="pic_4.png" alt="picture_4">
 					</div>
 					<div class="name_bar">
-						<p><span>5.</span>Rosey</p>
+						<!-- Name of user on leaderboard-->
+						<p><span>5.</span>Emma Kelly</p>
 						<div class="bar_wrap">
 							<div class="inner_bar" style="width: 30%"></div>
 						</div>
@@ -184,10 +215,12 @@
 			<div class="lboard_item year" style="display: none;">
 				<div class="lboard_mem">
 					<div class="img">
+						<!-- Image to show user on leaderboard-->
 						<img src="pic_5.png" alt="picture_5">
 					</div>
 					<div class="name_bar">
-						<p><span>1.</span>Scarlett Angela</p>
+						<!-- Name of user on leaderboard-->
+						<p><span>1.</span>Scarlett Morgan</p>
 						<div class="bar_wrap">
 							<div class="inner_bar" style="width: 90%"></div>
 						</div>
@@ -198,10 +231,12 @@
 				</div>
 				<div class="lboard_mem">
 					<div class="img">
+						<!-- Image to show user on leaderboard-->
 						<img src="pic_4.png" alt="picture_4">
 					</div>
 					<div class="name_bar">
-						<p><span>2.</span>Rosey</p>
+						<!-- Name of user on leaderboard-->
+						<p><span>2.</span>Emma Kelly</p>
 						<div class="bar_wrap">
 							<div class="inner_bar" style="width: 85%"></div>
 						</div>
@@ -212,10 +247,12 @@
 				</div>
 				<div class="lboard_mem">
 					<div class="img">
+						<!-- Image to show user on leaderboard-->
 						<img src="pic_3.png" alt="picture_3">
 					</div>
 					<div class="name_bar">
-						<p><span>3.</span>Johnson</p>
+						<!-- Name of user on leaderboard-->
+						<p><span>3.</span>Theo James</p>
 						<div class="bar_wrap">
 							<div class="inner_bar" style="width: 65%;"></div>
 						</div>
@@ -226,10 +263,12 @@
 				</div>
 				<div class="lboard_mem">
 					<div class="img">
+						<!-- Image to show user on leaderboard-->
 						<img src="pic_1.png" alt="picture_1">
 					</div>
 					<div class="name_bar">
-						<p><span>4.</span>Charles John</p>
+						<!-- Name of user on leaderboard-->
+						<p><span>4.</span>Kevin Osifo</p>
 						<div class="bar_wrap">
 							<div class="inner_bar" style="width: 30%"></div>
 						</div>
@@ -240,10 +279,12 @@
 				</div>
 				<div class="lboard_mem">
 					<div class="img">
+						<!-- Image to show user on leaderboard-->
 						<img src="pic_2.png" alt="picture_2">
 					</div>
 					<div class="name_bar">
-						<p><span>5.</span>Alex Mike</p>
+						<!-- Name of user on leaderboard-->
+						<p><span>5.</span>Alex Gabbett</p>
 						<div class="bar_wrap">
 							<div class="inner_bar" style="width: 10%"></div>
 						</div>
@@ -257,251 +298,5 @@
 	</div>
 </div>	
 
-<script src="script.js"></script>
-</body>
+<script src="scripts.js"></script>
 </html>
-
-<style>
-	*{
-    margin:0px;
-    padding:0px;
-    box-sizing: border-box;
-    line-height: 1.5;
-    font-family: 'Poppins', sans-serif;
-}
-body{
-    width:100%;
-    min-height: 100vh;
-    background-color: #ddd;
-}
-.about-us{
-    width: 100%;
-}
-.about-us h1{
-    text-align: center;
-    font-size: 40px;
-    color:#2b9ec2;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin-top: 50px;
-}
-.about-us h1::after{
-    content:"";
-    height:5px;
-    width: 200px;
-    background-color: #2b9ec2;
-    border-radius: 10px;
-    display: block;
-    margin: auto;
-}
-.wrapper{
-    padding: 0px 60px;
-    margin: 60px auto;
-}
-.content{
-    width:60%;
-    float:left;
-    text-align:left;
-    padding:0px 30px;
-}
-.content h3{
-    color:#222;
-    letter-spacing: 1px;
-}
-.content p{
-    font-family: sans-serif;
-    font-size: 17px;
-    color: #3d3d3d;
-    margin-top: 20px;
-}
-.content .button{
-    margin-top: 40px;
-}
-.content .button a{
-    color:#fff;
-    background-color: #2b9ec2;
-    border:1px solid #2b9ec2;
-    padding:10px 35px;
-    text-decoration: none;
-    letter-spacing: 1px;
-    font-size: 22px;
-    text-transform: uppercase;
-}
-.content .button a:hover{
-    background-color: #fff;
-    color: #2b9ec2;
-}
-.image-section{
-    width: 40%;
-    float: left;
-    text-align: left;
-    padding:0px 30px;
-}
-.image-section .aboutus.jpg{
-    max-width: 100%;
-    height: auto;
-}
-@media screen and (max-width: 900px){
-    .about-us{
-        width: 100%;
-        padding-top: 20px;
-    }
-    .about-us h1{
-        font-size: 32px;
-    }
-    .content{
-        width: 100%;
-        float: none;
-    }
-    .content .button{
-        margin-top: 30px;
-        text-align: center;
-    }
-    .content .button{
-        padding:8px 25px;
-    }
-    .content .social{
-       margin-top: 30px;
-       text-align: center; 
-    }
-    .conetent .social a{
-        font-size: 21px;
-    }
-    .image-section{
-        float: none;
-        width: 100%;
-        margin-top: 25px;
-    }
-}
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
-
-*{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	box-sizing: border-box;
-	font-family: 'Montserrat', sans-serif;
-}
-
-body{
-	background: #9ecae0;
-}
-
-.wrapper{
-	width: 100%;
-	height: 100%;
-}
-
-.lboard_section{
-	width: 500px;
-	height: 400px;
-	margin: 100px auto 0;
-	background: #f94f62;
-	padding: 25px 40px;
-	position: relative;
-	border-radius: 5px;
-}
-
-.lboard_section .lboard_tabs ul{
-	display: flex;
-}
-
-.lboard_section .lboard_tabs ul li{
-	margin-right: 50px;
-	font-size: 18px;
-	font-weight: 600;
-	color: #3a3d51;
-	cursor: pointer;
-}
-
-.lboard_section .lboard_tabs ul li:hover,
-.lboard_section .lboard_tabs ul li.active{
-	color: #fff;
-}
-
-.lboard_wrap{
-	position: absolute;
-	top: 70px;
-	left: 40px;
-	background: #238bf4;
-	width: 100%;
-	height: 100%;
-	border-radius: 5px;
-}
-
-.lboard_wrap .lboard_item{
-	padding: 25px;
-}
-
-.lboard_wrap .lboard_mem{
-	display: flex;
-	align-items: center;
-	padding: 15px 0;
-	border-bottom: 1px solid #ffe773;
-}
-
-.lboard_wrap .lboard_mem:first-child{
-	padding-top: 0;
-}
-
-.lboard_wrap .lboard_mem:last-child{
-	padding-bottom: 0;
-	border-bottom: 0;
-}
-
-.lboard_wrap .lboard_mem .img{
-	width: 50px;
-}
-
-.lboard_wrap .lboard_mem img{
-	display: block;
-	width: 100%;
-}
-
-.lboard_wrap .lboard_mem .name_bar{
-	margin: 0 20px;
-	width: calc(100% - 150px);
-}
-
-.lboard_wrap .lboard_mem .name_bar p{
-	color: #3a3d51;
-}
-
-.lboard_wrap .lboard_mem .name_bar p span{
-	margin-right: 5px;
-}
-
-.lboard_wrap .lboard_mem .points{
-	width: 100px;
-	color: #3a3d51;
-}
-
-.lboard_wrap .lboard_mem .name_bar .bar_wrap{
-	width: 100%;
-	height: 5px;
-	background: #ee3f17;
-	margin-top: 5px;
-	border-radius: 5px;
-	position: relative;
-	overflow: hidden;
-}
-
-.lboard_wrap .lboard_mem .name_bar .bar_wrap .inner_bar{
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 5px;
-	background: #fff;
-	border-radius: 5px;
-	border-top-right-radius: 0px;
-	border-bottom-right-radius: 0px;
-}
-
-/* Use a media query to add a break point at 800px: */
-@media screen and (max-width: 800px) {
-	.lboard_wrap, .lboard_mem, .name_bar, .bar_wrap, .inner_bar {
-	  width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-	}
-  }
-</style>
