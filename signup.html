@@ -5,11 +5,12 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Broken Planet</title>
     <link rel="stylesheet" href="abp.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+
         <!-- making classes for my images and headings -->
     </div>
     <div class="container">
@@ -20,7 +21,7 @@
             <img src="newbi/Beach2.jpg" width="350" height="400" alt="">
         </div>
         <div class="content">
-            <h2>Coastel</h2>
+            <h2>Coastal</h2>
             <p>
                 If you like the beach or sunny areas this is the place for you. We will be doing cleanups in coastel areas just click the link below.
             </p>
@@ -66,7 +67,7 @@
         <div class="content">
             <h2>Inter-City</h2>
             <p>
-             This should be more suited towards everybody. Here will just be cleaning up the aereas of town such as Connolly, Jervis and much more.
+             This should be more suited towards everybody. Here we will just be cleaning up the areas of town such as Connolly, Jervis and much more.
             </p>
             <!-- making my "readmore button a link back to the about us page" -->
             <a href="AboutUs.html"><button>Read More...</button></a>
@@ -116,6 +117,7 @@ body{
   height: 500px;
   transition: 0.5s ease-in-out;
 }
+/*giving the images a hover effect*/
 .container:hover .image img
 { 
   border-radius: 50%;  
@@ -125,6 +127,7 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/*when i hover over image it the paragraph should stay at the bottom so the image dosent block it*/
 .container .content{
    position: absolute;
    top: 42%;
@@ -136,10 +139,12 @@ body{
    display: none;
    transition: 0.5s ease-in-out;
 }
+/*hover effect wont hide the paragraph*/
 .container:hover .content{
     display: block;
 }
 
+/*styling my read more button*/
 .container button{
     width: 140px;
     height: 50px;
@@ -150,38 +155,5 @@ body{
     border-radius: 50px;
     cursor: pointer;
 }
-.media{
-    display: flex;
-    position: absolute;
-    top: 83%;
-    opacity: 0;
-    transition: 0.5s ease-in-out;
-}
-.container:hover .media{
-    opacity: 1;
-}
-.media li{
-    list-style: none;
-    margin: 15px 35px;
-}
-.empty{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 400px;
-    height: 250px;
-    background-color: black;
-    z-index: -1;
-    display: none;
-    transition: 1s ease-in-out;
-    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 76%);
-}
-.container:hover .empty{
-    display: block;
-}
-@media screen and (max-width: 500px){
-    body{
-        display: block;
-    }
-}
+
 </style>
