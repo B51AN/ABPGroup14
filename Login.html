@@ -23,7 +23,7 @@
         <div style="padding-left:16px">
           
         </div>
-         <!--making webpage responsive-->
+         <!--making navbar responsive-->
         <script>
         function myFunction() {
           var x = document.getElementById("myTopnav");
@@ -98,10 +98,10 @@
             <input type="password" class="form-control" placeholder="Password">
             <input type="password" class="form-control" placeholder="Confirm Password">
 
-
-
+            
+            <!--adding a big green sign up button-->
             <input type="submit" value="SignUp" class="bg-success">
-
+            <!--making a button to go back onto the login page-->
             <p>You already have an account? <a href="#" onclick="change()">LogIn</a> </p>
 
 
@@ -131,7 +131,7 @@
 
 </div>
 
-<!--java for sign up and login buttons-->
+<!--java for sign up and login buttons to make them flip over when clicked-->
 <script>
     function change(){
         var e=document.querySelector('.container');
@@ -155,10 +155,9 @@
   font-family: 'Poppins', sans-serif;
 
 }
-
+/*styling the white box to make it look neat*/
 .container .login, .container1 .signup{
-    width: 400px;
-    height: 500px;
+    width: 400px; height: 500px;
     border: 2px solid #ccc;
     position: absolute;
     top: 20%;
@@ -178,16 +177,17 @@
     height: 560px;
 }
 
-
+    /*when clicking the sign up button the box for sign up will rotate evenly*/
 .active .login{
     transform: perspective(600px) rotateY(-180deg);
 }
+/*when clicking the login button the box for sign up will rotate evenly*/
 .active .signup{
     transform: perspective(600px) rotateY(0deg);
 }
 
 
-
+/*Styling my heading on the login*/
 .login .logo h1{
     font-size: 80px;
     -webkit-text-stroke: 3px;
@@ -196,7 +196,7 @@
     margin-left: 25%;
     margin-top: 2rem;
 }
-
+    /*styling the heading on the sign up page*/
 .signup .logo h1{
     font-size: 50px;
     -webkit-text-stroke: 3px;
@@ -206,6 +206,7 @@
     margin-top: 2rem;
 }
 
+/*making the place where you enter your details look neat*/
 .login input, .signup input{
     margin-left: auto;
     margin-right: auto;
@@ -215,7 +216,7 @@
     margin-top: 2rem;
 
 }
-
+/*styling the login and sign in button*/
 .login input[type=submit], .signup input[type=submit] {
     width: 40%;
     height: 40px;
@@ -227,21 +228,11 @@
     border: none;
 
 }
- 
-.login .media, .signup .media{
-    margin-left: 2rem;
-    list-style: none;
-}
-
-.login .media li, .signup .media li{
-   
-   margin: 2rem 20px;
-   padding: 5px;
-} 
+ /*styling my paragraph*/
 p{
     margin: -1rem 3rem;
 }
-
+ /*styling the left side of the webpage*/
 .empty1{
     width: 50%;
     height: 100vh;
@@ -252,7 +243,7 @@ p{
     z-index: -2000;
     transition: 1s ease-in-out;
 }
-
+ /*styling the right side of the webpage*/
 .empty2{
     width: 50%;
     height: 100vh;
@@ -266,11 +257,12 @@ p{
     -webkit-text-stroke-color: transparent;
     
 }
+ /*adjusting where the h1 is and howw it transitions when clicking the signup*/
 .empty .content{
     margin-top: 35vh;
     transition: 1s ease-in-out;
 }
-
+ /*styling the h1*/
 .empty h1{
     margin-left: 10rem;
     font-size: 80px;
@@ -279,33 +271,34 @@ p{
     -webkit-text-fill-color: transparent;
     transition: 1s ease-in-out;
 }
-
+ /*styling the paragrapgh thats under the h1*/
 .empty p{
     color: black;
     font-size: 30px;
     transition: 1s ease-in-out;
 }
+ /*adjusting the h1 on the sign up page to make it fit with the transition*/
 .empty2 p, .empty2 h1{
     color: transparent;
     -webkit-text-stroke-color: transparent;
     margin-left: 10px;
 
 }
-
+ /*when the transition is active the h1 on the first page should move smoothly to the right and fade away*/
 .active .empty1, .active .empty1 p, .active .empty1 h1{
     top: 0;
     left: 50%;
     color: transparent;
     -webkit-text-stroke-color: transparent;
 }
-
+ /*when the transition is active the h1 on the second page should move smoothly to the left and fade away*/
 .active .empty2, .active .empty2 p, .active .empty2 h1{
     top: 0;
     left: 0;
     color: white;
     -webkit-text-stroke-color: #fff;
-}
-
+} 
+/*adjust the size of the screen depending on the device*/
 @media screen and (max-width: 500px){
     
 }
