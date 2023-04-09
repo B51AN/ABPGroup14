@@ -300,3 +300,108 @@
 
 <script src="scripts.js"></script>
 </html>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Poppins', sans-serif;
+		background-color: black;
+		color: white;
+		
+	}
+	/*styling my h1*/
+	.container section h1{
+		font-size: 50px;
+		font-variant: small-caps;
+	}
+	/*styling my paragraph*/
+	.container section{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 70vh;
+		width: 500px;
+		margin-left: 10%;
+	   
+	}
+	/*making my "join here" button look better*/
+	.container section button{
+		width: 150px;
+		cursor: pointer;
+		height: 45px;
+		margin-top: 10px;
+		background-color: rgb(27, 135, 184);
+		border: 2px solid rgb(27, 135, 184);
+	}
+	/*making my "join here" button have a hover effect*/
+	.container section button:hover{
+		background-color: transparent;
+		border: 2px solid rgb(27, 135, 184);
+		color: rgb(0, 204, 255);
+	}
+	/*styling my image*/
+	.container .image img{
+		margin-left: 50%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 800px;
+		height: 100vh;
+	}
+	/*making my top heading look better*/
+	.container .logo{
+		font-size: 40px;
+		padding: 20px 40px;
+	}
+	/*styling my navbar*/
+	.container .nav-list{
+		position: absolute;
+		display: flex;
+		top: 0;
+		right: 8rem;
+		list-style: none;
+		background-color: transparent;
+	}
+	/*styling navbar*/
+	.container .nav-list li{
+		margin: 40px;
+		background-color: transparent;
+		text-decoration: none;
+		font-size: 20px;
+	}
+	/*giving my navbar a blue hover effect*/
+	.container .nav-list li a:hover{
+		color: rgba(27, 135, 184);
+	}
+	/*styling the navbar*/
+	.container .nav-list li a{
+		background-color: transparent;
+		text-decoration: none;
+	}
+	/*changes the screen dimentions depending on the width dimention*/
+	@media screen and (max-width: 900px){
+		.container section{
+			width: 90%;
+			margin-top: 100%;
+			margin-left: 10%;
+		}
+		/*making the image fit in nicely*/
+		.container .image img{
+			top:10vh;
+			height: auto;
+			width: 90%;
+			margin-left: 40px;
+		}
+		/*styling the navbar*/
+		.container .nav-list{
+			left: 0;
+			top: 130vh;
+			margin-left: 5%;
+		}
+	}
+	
+	</style>
+	
+	
+	</body>
