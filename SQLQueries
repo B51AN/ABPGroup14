@@ -1,0 +1,28 @@
+#alex
+drop database if exists abp_database;
+CREATE DATABASE abp_database;
+use abp_database;
+create table users(
+	userID varchar(10) primary key,
+	userNames varchar(10),
+    userEmail varchar(50), 
+    userPassword varchar(25) 
+    
+);
+
+create table leaderboard(
+	leaderBoardId varchar(50) NOT NULL PRIMARY KEY,
+    userPoints varchar(500),
+	montlyPoints varchar(500),
+    yearlyPoints varchar(500), 
+    todayPoints varchar(500), 
+    userPassword varchar(25),
+    UserID varchar(10),
+    foreign key (UserID) references users (UserID)
+);
+ 
+ insert into users values('A123', 'AlexP', 'alexp@gmail.com', 'Happy123'
+	
+ 
+ );
+ 
